@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+/* Defaults */
+
+:root {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  --orange: #FA2A28;
+  background-color: #EBEBEB;
+  color: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* End of Defaults */
+
+/* Showcase */
+
+.showcase {
+  background-image: url(./img/showcase-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  border-bottom: .5rem solid var(--orange);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.showcase__center {
+  text-align: right;
+  width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.showcase__heading {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+
+.showcase__span {
+  font-size: 2.3rem;
+  color: #111;
+}
+
+.showcase__para {
+  font-size: 1.5rem;
+}
+
+.showcase__btn {
+    background-color: var(--orange);
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    transition: background-color .4s ease-in-out,
+                color .4s ease-in-out;
+    border: .1rem solid var(--orange);
+    letter-spacing: .1rem;
+}
+
+.showcase__btn:hover {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+/* End of Showcase */
+
+/* Cases */
+
+.cases {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cases__center {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.cases__img {
+  width: 45%;
+}
+
+.cases__para {
+  font-size: 2rem;
+}
+
+.cases__underline {
+  width: 5rem;
+  height: .1rem;
+  border-radius: 1rem;
+  margin: .3rem auto;
+  background-color: var(--orange);
+}
+
+.cases__heading {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.cases__fetch-para {
+  font-size: 1.5rem !important;
+}
+
+/* End of Cases */
+
+/* Heading */
+
+.headline {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headline__title {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
+.headline__underline {
+  background-color: var(--orange);
+  width: 5rem;
+  height: .4rem;
+  margin: .3rem auto;
+  border-radius: 1rem;
+}
+
+.headline__subtitle {
+  font-size: 1.4rem;
+}
+
+.headline__subtitle::first-letter {
+  text-transform: uppercase;
+}
+
+/* End of Heading */
+
+/* Countries */
+
+.countries {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.countries__form {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.countries__input {
+  width: 100%;
+  border: .1rem solid var(--orange);
+  border-radius: .5rem;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  color: #111;
+}
+
+.fade-in {
+  animation: fadeIN 1s ease-in-out forwards;
+}
+
+.countries__para {
+  margin-top: 1rem;
+  color: #FA2A28;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.countries__box {
+  margin-top: 2rem;
+}
+
+.countries__heading {
+  font-size: 2rem;
+}
+
+.countries__result {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.countries__span {
+  font-size: 1.5rem;
+}
+
+/* End of Countries */
+
+/* Instructions */
+
+.instructions {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.instructions__center {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.instructions__img {
+  width: 40%;
+}
+
+.instructions__box:nth-child(2) .instructions__img {
+  width: 50%;
+}
+
+.instructions__underline {
+  width: 5rem;
+  height: .1rem;
+  border-radius: 1rem;
+  margin: .3rem auto;
+  background-color: var(--orange);
+}
+
+.instructions-box .instructions__underline {
+  margin: .5rem auto;
+  height: .2rem;
+}
+
+.instructions__heading {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+/* End of Instructions */
+
+/* Footer */
+
+.footer {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FA2A28;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* End of Footer */
+
+/* KeyFrames */
+
+@keyframes fadeIN {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* End of KeyFrames */
